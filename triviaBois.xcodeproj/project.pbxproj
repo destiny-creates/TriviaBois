@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7EFD68442102665B00B0D994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD68432102665B00B0D994 /* AppDelegate.swift */; };
-		7EFD68462102665B00B0D994 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD68452102665B00B0D994 /* QuizViewController.swift */; };
 		7EFD68492102665B00B0D994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFD68472102665B00B0D994 /* Main.storyboard */; };
 		7EFD684B2102665B00B0D994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFD684A2102665B00B0D994 /* Assets.xcassets */; };
 		7EFD684E2102665B00B0D994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFD684C2102665B00B0D994 /* LaunchScreen.storyboard */; };
 		7EFD685621064E6E00B0D994 /* AddNewQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD685521064E6E00B0D994 /* AddNewQuestionViewController.swift */; };
 		7EFD68582106542600B0D994 /* TriviaQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD68572106542600B0D994 /* TriviaQuestion.swift */; };
+		7EFD685B21065E4600B0D994 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD685A21065E4600B0D994 /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7EFD68402102665B00B0D994 /* triviaBois.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = triviaBois.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFD68432102665B00B0D994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EFD68452102665B00B0D994 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		7EFD68482102665B00B0D994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EFD684A2102665B00B0D994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EFD684D2102665B00B0D994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EFD684F2102665B00B0D994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EFD685521064E6E00B0D994 /* AddNewQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewQuestionViewController.swift; sourceTree = "<group>"; };
 		7EFD68572106542600B0D994 /* TriviaQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuestion.swift; sourceTree = "<group>"; };
+		7EFD685A21065E4600B0D994 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,32 @@
 		7EFD68422102665B00B0D994 /* triviaBois */ = {
 			isa = PBXGroup;
 			children = (
+				7EFD685C21065EEA00B0D994 /* storyboards */,
+				7EFD685921065D9700B0D994 /* View Controllers */,
 				7EFD68432102665B00B0D994 /* AppDelegate.swift */,
-				7EFD68452102665B00B0D994 /* QuizViewController.swift */,
-				7EFD68472102665B00B0D994 /* Main.storyboard */,
 				7EFD684A2102665B00B0D994 /* Assets.xcassets */,
-				7EFD684C2102665B00B0D994 /* LaunchScreen.storyboard */,
 				7EFD684F2102665B00B0D994 /* Info.plist */,
-				7EFD685521064E6E00B0D994 /* AddNewQuestionViewController.swift */,
 				7EFD68572106542600B0D994 /* TriviaQuestion.swift */,
 			);
 			path = triviaBois;
+			sourceTree = "<group>";
+		};
+		7EFD685921065D9700B0D994 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7EFD685A21065E4600B0D994 /* QuizViewController.swift */,
+				7EFD685521064E6E00B0D994 /* AddNewQuestionViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7EFD685C21065EEA00B0D994 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7EFD68472102665B00B0D994 /* Main.storyboard */,
+				7EFD684C2102665B00B0D994 /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EFD68462102665B00B0D994 /* QuizViewController.swift in Sources */,
+				7EFD685B21065E4600B0D994 /* QuizViewController.swift in Sources */,
 				7EFD68442102665B00B0D994 /* AppDelegate.swift in Sources */,
 				7EFD68582106542600B0D994 /* TriviaQuestion.swift in Sources */,
 				7EFD685621064E6E00B0D994 /* AddNewQuestionViewController.swift in Sources */,

@@ -94,6 +94,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="answer1Button" destination="KdD-ZF-szw" id="kmy-Rm-6di"/>
+                        <outlet property="answer2Button" destination="aCm-4f-XEk" id="Gqo-0b-wNC"/>
+                        <outlet property="answer3Button" destination="Kly-bZ-hQD" id="set-ag-Wn6"/>
+                        <outlet property="answer4Button" destination="cXR-n5-VhX" id="xUC-Ca-fx9"/>
+                        <outlet property="questionLabel" destination="cqN-Uo-UzM" id="bSY-oX-Mzs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
