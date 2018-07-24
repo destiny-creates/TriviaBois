@@ -27,18 +27,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdD-ZF-szw">
                                 <rect key="frame" x="16" y="241" width="343" height="30"/>
                                 <state key="normal" title="Answer 1"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcT-Of-NGW"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCm-4f-XEk">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCm-4f-XEk">
                                 <rect key="frame" x="16" y="290" width="343" height="30"/>
                                 <state key="normal" title="Answer 2"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B00-Og-CC8"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXR-n5-VhX">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXR-n5-VhX">
                                 <rect key="frame" x="16" y="394" width="343" height="30"/>
                                 <state key="normal" title="Answer 4"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKn-Zj-JFN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kly-bZ-hQD">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kly-bZ-hQD">
                                 <rect key="frame" x="16" y="341" width="343" height="30"/>
                                 <state key="normal" title="Answer 3"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VmA-rS-k3t"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9q1-Ro-jun">
                                 <rect key="frame" x="290" y="626" width="50" height="21"/>
@@ -87,7 +99,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Trivia Time" id="wqy-fT-Xu7">
-                        <barButtonItem key="leftBarButtonItem" title="Reset" id="XzM-AH-Ntw"/>
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="XzM-AH-Ntw">
+                            <connections>
+                                <action selector="resetButtonTapped:" destination="BYZ-38-t0r" id="Vza-2p-PgH"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add new question" id="BbR-mN-m6B">
                             <connections>
                                 <segue destination="pKc-sy-azb" kind="show" id="PzZ-Hk-zD9"/>
@@ -100,6 +116,7 @@
                         <outlet property="answer3Button" destination="Kly-bZ-hQD" id="set-ag-Wn6"/>
                         <outlet property="answer4Button" destination="cXR-n5-VhX" id="xUC-Ca-fx9"/>
                         <outlet property="questionLabel" destination="cqN-Uo-UzM" id="bSY-oX-Mzs"/>
+                        <outlet property="scoreLabel" destination="9S6-cn-9ZQ" id="E3e-El-8tc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
