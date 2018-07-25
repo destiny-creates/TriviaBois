@@ -212,7 +212,7 @@
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0k-Zu-Lnb">
-                                <rect key="frame" x="128" y="129" width="122" height="20.5"/>
+                                <rect key="frame" x="127" y="138" width="122" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -220,17 +220,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="e0k-Zu-Lnb" firstAttribute="top" secondItem="5Q7-Ax-9hG" secondAttribute="top" constant="13" id="7Im-4o-sKz"/>
-                            <constraint firstItem="5Q7-Ax-9hG" firstAttribute="trailing" secondItem="e0k-Zu-Lnb" secondAttribute="trailing" constant="125" id="OyA-7D-QKu"/>
-                            <constraint firstItem="e0k-Zu-Lnb" firstAttribute="leading" secondItem="5Q7-Ax-9hG" secondAttribute="leading" constant="128" id="TfQ-15-rJU"/>
+                            <constraint firstItem="5Q7-Ax-9hG" firstAttribute="trailing" secondItem="e0k-Zu-Lnb" secondAttribute="trailing" constant="126" id="DEQ-kx-wUg"/>
+                            <constraint firstItem="e0k-Zu-Lnb" firstAttribute="top" secondItem="5Q7-Ax-9hG" secondAttribute="top" constant="22" id="DQq-ab-nyy"/>
+                            <constraint firstItem="e0k-Zu-Lnb" firstAttribute="leading" secondItem="5Q7-Ax-9hG" secondAttribute="leading" constant="127" id="kaa-YQ-191"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Q7-Ax-9hG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add new question" id="4Qp-Yw-BlG">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Naf-Hj-rx8"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Naf-Hj-rx8">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="pKc-sy-azb" id="4UT-p2-d3f"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="answer1TextField" destination="Jtb-hU-ycl" id="S5b-jb-H23"/>
+                        <outlet property="answer2TextField" destination="7uO-xQ-sc4" id="B3Z-Q6-Ix7"/>
+                        <outlet property="answer3TextField" destination="hj5-EO-4hM" id="1r4-s6-8e8"/>
+                        <outlet property="answer4TextField" destination="2cj-gI-uyD" id="xI5-5a-8db"/>
+                        <outlet property="correctAnswerSegmentedController" destination="eq5-ru-vrM" id="zvI-QP-O9q"/>
+                        <outlet property="questionTextField" destination="bD7-Y5-M7L" id="PmV-0c-zDa"/>
+                        <segue destination="ffa-nx-ey9" kind="unwind" identifier="unwindToQuizScreen" unwindAction="unwindToQuizScreenWithSegue:" id="Qek-cj-8s5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u9u-va-OBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ffa-nx-ey9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1976.8" y="116.49175412293854"/>
         </scene>
