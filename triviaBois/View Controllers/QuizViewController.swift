@@ -122,7 +122,9 @@ class QuizViewController: UIViewController {
     @IBAction func resetButtonTapped(_ sender: Any) {
         resetGame()
     }
+    @IBAction func unwindToQuizScreen(segue: UIStoryboardSegue) {
     
+    }
     
 }
 
